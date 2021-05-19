@@ -18,7 +18,7 @@
         "validDOB",
         function(value, element) {              
             //var from = value.split(" "); // DD MM YYYY
-             var from = value.split("-"); // DD/MM/YYYY
+             var from = value.split("-"); // DD-MM-YYYY
 
             var day = from[0];
             var month = from[1];
