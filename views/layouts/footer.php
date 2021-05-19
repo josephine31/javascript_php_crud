@@ -17,8 +17,8 @@
         $.validator.addMethod(
         "validDOB",
         function(value, element) {              
-            var from = value.split(" "); // DD MM YYYY
-            // var from = value.split("/"); // DD/MM/YYYY
+            //var from = value.split(" "); // DD MM YYYY
+             var from = value.split("-"); // DD/MM/YYYY
 
             var day = from[0];
             var month = from[1];
@@ -31,7 +31,7 @@
             var currdate = new Date();
             var setDate = new Date();
 
-            setDate.setFullYear(mydate.getFullYear() + age, month-1, day);
+            setDate.setFullYear(mydate.getFullYear() + age, month-1, day);1
 
             if ((currdate - setDate) > 0){
                 return true;
